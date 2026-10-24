@@ -1,0 +1,42 @@
+; Roadster flight prototype — Godot 4.x.
+config_version=5
+
+[application]
+config/name="Roadster：氮气飞驰"
+config/description="银色跑车穿越霓虹城市、沙漠、天空与海底的氮气飞行试玩原型"
+run/main_scene="res://scenes/app.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/custom_user_dir_name="RoadsterNitroPrototype"
+config/use_custom_user_dir=true
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/mode=4
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="ignore"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.016, 0.025, 0.075, 1)
+textures/default_filters/use_nearest_mipmap_filter=false
+
+[physics]
+common/physics_ticks_per_second=60
+
+[internationalization]
+locale/include_text_server_data=true
+
+[input]
+thrust_keyboard={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":32)]
+}
+thrust_mouse={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"button_index":1)]
+}
+
